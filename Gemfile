@@ -2,11 +2,18 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'mysql2'
+gem 'will_paginate', ">= 3.0.pre2"
 
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'jquery-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'launchy'
 end
 
 # Use unicorn as the web server
